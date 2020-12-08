@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <include file="$(find tiago_2dnav_gazebo)/launch/tiago_navigation.launch">
+      <arg name="public_sim"      value="true"/>
+      <arg name="robot"  value="steel"/>
+    </include>
+    <node name="simple_navigation_goals" pkg="simple_navigation_goals" type="simple_navigation_goals" output="screen"/>
+</launch>
