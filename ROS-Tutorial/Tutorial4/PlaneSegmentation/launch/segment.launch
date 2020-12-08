@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <include file="$(find object_detection)/launch/object_detection.launch">
+    </include>
+    <node name="PlaneSegmentation_main" pkg="PlaneSegmentation" type="PlaneSegmentation_main" output="screen"/>
+ 
+</launch>
+
+
